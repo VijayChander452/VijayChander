@@ -8,4 +8,4 @@ RUN apt-get update && apt-get install -y python3
 COPY app.py /app/app.py
 
 # Specify the command to run the app
-CMD ["python3", "/app/app.py"]
+CMD ["python3", "/code/HiveCode"]

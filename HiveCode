@@ -1,6 +1,6 @@
 SELECT 
     a.name, 
-    a.salary, 
+    s.salary, 
     a.age, 
     CASE 
         WHEN t.name IS NULL THEN 'Insert'

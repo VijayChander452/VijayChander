@@ -1,11 +1,11 @@
 SELECT 
-    s.name, 
-    s.salary, 
-    s.age, 
+    a.name, 
+    a.salary, 
+    a.age, 
     CASE 
         WHEN t.name IS NULL THEN 'Insert'
         ELSE 'Update'
     END AS operation_type,
     CURRENT_TIMESTAMP AS operational_timestamp
-FROM source s 
-LEFT JOIN target t ON s.name = t.name;
+FROM source a 
+LEFT JOIN target t ON a.name = t.name;

@@ -3,7 +3,7 @@ SELECT
     s.salary, 
     s.age, 
     CASE 
-        WHEN t.name IS NULL THEN 'insert'
+        WHEN t.name IS NULL THEN 'Insert'
         ELSE 'update'
     END AS operation_type,
     CURRENT_TIMESTAMP AS operational_timestamp

@@ -1,7 +1,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+containerId=`docker ps | Awk -F " " '{print $1}'`
 
 # Run the Docker image as a container
-echo
+docker rm -f $containerId

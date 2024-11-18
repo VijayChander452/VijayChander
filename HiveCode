@@ -7,5 +7,5 @@ SELECT
         ELSE 'Update'
     END AS operation_type,
     CURRENT_TIMESTAMP AS operational_timestamp
-FROM source a 
-LEFT JOIN target t ON a.name = t.name;
+FROM source s 
+LEFT JOIN target t ON s.name = t.name;
